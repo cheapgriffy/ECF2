@@ -1,3 +1,51 @@
+.highlight {
+  color: transparent;
+  background-image: linear-gradient(to left, #b980c0, #c068b1);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.highlight-alt {
+  color: transparent;
+  background-image: linear-gradient(to left, #9268be, #ac67aa);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.title-gradient-subtile {
+  color: transparent;
+  background-image: linear-gradient(to top, #680b7c, #95287d);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.cta-button {
+  background-color: #3D63EA;
+  border: none;
+  border-radius: 0.5em;
+  box-shadow: 0px 0px 5em rgba(0, 0, 0, 0.1490196078);
+  color: white;
+  padding: 20px 30px;
+  margin-top: 20px;
+  font-size: 1em;
+  font-weight: 600;
+  align-self: start;
+  transition: all 0.3s ease;
+}
+.cta-button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  box-shadow: 0px 0px 5em rgb(255, 242, 58);
+}
+
+h2 {
+  text-align: center;
+  color: #1A202C;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
 .nav-bar {
   z-index: 10;
   display: flex;
@@ -64,7 +112,7 @@
 }
 
 .hero {
-  height: 80vh;
+  height: 90vh;
   display: flex;
   gap: 2%;
   justify-content: center;
@@ -77,18 +125,6 @@
 }
 .hero h1 span {
   font-weight: 700;
-}
-.hero h1 .highlight {
-  color: transparent;
-  background-image: linear-gradient(to left, #b980c0, #c068b1);
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-.hero h1 .highlight-alt {
-  color: transparent;
-  background-image: linear-gradient(to left, #9268be, #ac67aa);
-  -webkit-background-clip: text;
-  background-clip: text;
 }
 .hero div {
   width: 40vw;
@@ -107,24 +143,103 @@
   width: 100%;
   height: auto;
 }
-.hero button {
-  background-color: #3D63EA;
-  border: none;
-  border-radius: 0.5em;
-  box-shadow: 0px 0px 5em rgba(0, 0, 0, 0.1490196078);
-  color: white;
-  padding: 20px 30px;
-  margin-top: 20px;
-  font-size: 1em;
-  font-weight: 600;
-  align-self: start;
+
+.service-showcase {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid #e7daed;
+  border-bottom: 3px solid #e7daed;
+  background-color: #f9f9ff;
+}
+.service-showcase .service-cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.service-showcase .service-cards div {
+  width: 20em;
+  min-width: 20em;
+  height: 18em;
+  min-height: 18em;
+  padding: 18px;
+  box-shadow: 0px 0px 1.5em rgba(0, 0, 0, 0.1490196078);
+  border-radius: 1em;
+  background-color: #fafafa;
   transition: all 0.3s ease;
 }
-.hero button:hover {
+.service-showcase .service-cards div:hover {
+  transition: all 0.3s ease;
   cursor: pointer;
-  background-color: rgb(255, 255, 255);
-  color: black;
-  box-shadow: 0px 0px 5em rgb(255, 242, 58);
+  z-index: 5;
+  translate: 0px 10px;
+  border-color: #d34f7f;
+  border-style: solid;
+  border-width: 2px;
+}
+.service-showcase .service-cards div h2 {
+  margin-bottom: 0%;
+}
+.service-showcase .service-cards div h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.service-showcase .service-cards div p {
+  color: #4A5568;
+  line-height: 1.5em;
+}
+.service-showcase .service-cards div img {
+  width: 50px;
+  height: auto;
+  margin-top: 20px;
+}
+.service-showcase #index-map {
+  width: 10em;
+  height: 3em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.service-showcase #index-map .marker {
+  width: 1em;
+  height: 1em;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+  border-color: #cbd5e0;
+}
+.service-showcase #index-map #_3 {
+  background-color: #77147c;
+}
+.service-showcase #index-map-fancier {
+  position: absolute;
+  translate: 30em 15em;
+  width: 10em;
+  height: 3em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.service-showcase #index-map-fancier .progress-bar {
+  width: 6em;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #e2e8f0;
+}
+.service-showcase #index-map-fancier .progress-bar .liquid {
+  display: block;
+  width: 30%;
+  height: 100%;
+  background-color: #57007b;
 }
 
 body {

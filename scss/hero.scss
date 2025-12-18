@@ -1,5 +1,5 @@
 .hero{
-    height: 80vh;
+    height: 90vh;
 
     display: flex;
     gap: 2%;
@@ -14,22 +14,6 @@
         
         span{
             font-weight: 700;
-        }
-        .highlight{
-            // mandatory for background-clip to work
-            // dang do i hate chromonium requirements
-            color: transparent;
-            background-image: linear-gradient(to left, #b980c0, #c068b1);
-            -webkit-background-clip: text;
-            background-clip: text;
-        }
-        .highlight-alt{
-            // mandatory for background-clip to work
-            // dang do i hate chromonium requirements
-            color: transparent;
-            background-image: linear-gradient(to left, #9268be, #ac67aa);
-            -webkit-background-clip: text;
-            background-clip: text;
         }
     }
     
@@ -54,29 +38,4 @@
         height: auto;
     };
 
-    button{
-        background-color: #3D63EA;
-        border: none;
-        border-radius: 0.5em;
-        box-shadow: 0px 0px 5em #00000026;
-
-        color: white;
-
-        padding: 20px 30px;
-        margin-top: 20px;
-
-        font-size: 1em;
-        font-weight: 600;
-
-        // makes it not stretch like hell on flex containers
-        align-self: start;
-
-        transition: all 0.3s ease;
-        &:hover {
-            cursor: pointer;
-            background-color: rgb(255, 255, 255);
-            color: black;
-            box-shadow: 0px 0px 5em rgb(255, 242, 58);
-        }
-    }
 }
