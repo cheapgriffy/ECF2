@@ -1,17 +1,10 @@
-body {
-  margin: 0;
-  font-family: Inter, sans-serif;
-}
-body a {
-  text-decoration: none;
-  color: inherit;
-}
-
 .nav-bar {
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  height: 3em;
   background-color: white;
   box-shadow: 0px 14px 2em rgba(141, 141, 141, 0.1450980392);
 }
@@ -24,6 +17,19 @@ body a {
   cursor: pointer;
   scale: 1.05;
 }
+.nav-bar button {
+  background-image: linear-gradient(to left, #570480, #656ff1);
+  border: none;
+  border-radius: 0.5em;
+  color: white;
+  padding: 12px 22px;
+  font-size: 1em;
+  font-weight: 600;
+}
+.nav-bar button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to left, #45036a, #4e5ccc);
+}
 .nav-bar div {
   display: flex;
   gap: 15px;
@@ -31,6 +37,7 @@ body a {
 }
 .nav-bar div a {
   transition: color 0.3s ease;
+  translate: 0px 0.4em;
   padding: 10px 15px;
   border-radius: 5px;
   display: flex;
@@ -55,20 +62,78 @@ body a {
   margin-top: 5px;
   transition: all 0.3s ease;
 }
-.nav-bar button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-image: linear-gradient(to bottom, #6675F7, #57007B);
-  color: white;
-  font-weight: 550;
-  font-size: 1em;
-  transition: background-image 0.3s ease;
-  cursor: pointer;
+
+.hero {
+  height: 80vh;
+  display: flex;
+  gap: 2%;
+  justify-content: center;
+  align-items: center;
 }
-.nav-bar button:hover {
-  transition: background-image 0.3s ease;
-  background-image: linear-gradient(to bottom, #b15bd6, #6c76d3);
+.hero h1 {
+  width: 40vw;
+  font-size: 4em;
+  font-weight: 300;
+}
+.hero h1 span {
+  font-weight: 700;
+}
+.hero h1 .highlight {
+  color: transparent;
+  background-image: linear-gradient(to left, #b980c0, #c068b1);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.hero h1 .highlight-alt {
+  color: transparent;
+  background-image: linear-gradient(to left, #9268be, #ac67aa);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.hero div {
+  width: 40vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.hero p {
+  color: #4A5568;
+  line-height: 1.8em;
+  font-size: larger;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+}
+.hero button {
+  background-color: #3D63EA;
+  border: none;
+  border-radius: 0.5em;
+  box-shadow: 0px 0px 5em rgba(0, 0, 0, 0.1490196078);
+  color: white;
+  padding: 20px 30px;
+  margin-top: 20px;
+  font-size: 1em;
+  font-weight: 600;
+  align-self: start;
+  transition: all 0.3s ease;
+}
+.hero button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  box-shadow: 0px 0px 5em rgb(255, 242, 58);
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*# sourceMappingURL=build.css.map */
