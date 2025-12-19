@@ -1,4 +1,5 @@
 // This place is for recurent classes, y'know, highlight texts and stuff
+$divider-lenghth: 4em;
 
 .highlight{
     // mandatory for background-clip to work
@@ -50,6 +51,14 @@
     }
 }
 
+.divider{
+    display: block;
+    width: $divider-lenghth;
+    height: 5px;
+    border-radius: 1em;
+    background-image: linear-gradient(to right, #5f057b, #f16280);
+}
+
 h2{
     text-align: center;
 
@@ -57,4 +66,29 @@ h2{
     
     font-size: 2.5em;
     font-weight: 600;
+}
+
+
+@mixin underline-hover{
+    span{
+        height: 2px;
+        width: 0%;
+        background-color: transparent;
+        display: block;
+        margin-top: 5px;
+        transition: all 0.3s ease;
+    }
+    
+    &:hover {
+        color: blue;
+        span{
+            height: 2px;
+            width: 100%;
+            background-color: blue;
+            display: block;
+            margin-top: 5px;
+            transition: all 0.3s ease;
+            
+        }
+    }
 }

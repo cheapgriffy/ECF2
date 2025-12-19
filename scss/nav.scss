@@ -1,3 +1,5 @@
+// "as *" needed to use mixins from global-classes.scss somehow
+@use "global-classes.scss" as *; 
 
 $nav-bar-spacing: 20px;
 $nav-bar-height: 3em;
@@ -59,30 +61,9 @@ $nav-bar-height: 3em;
 
             display: flex;
             flex-direction: column;
+
             
-            span{
-                height: 2px;
-                width: 0%;
-                background-color: transparent;
-                display: block;
-                margin-top: 5px;
-                transition: all 0.3s ease;
-                
-            }
-
-            &:hover {
-                color: blue;
-
-                span{
-                    height: 2px;
-                    width: 100%;
-                    background-color: blue;
-                    display: block;
-                    margin-top: 5px;
-                    transition: all 0.3s ease;
-                    
-                }
-            }
+            @include underline-hover;
         }
     }
 }

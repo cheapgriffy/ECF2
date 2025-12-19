@@ -1,0 +1,92 @@
+@use "global-classes.scss" as *; 
+
+// entier root div here
+.develop-software{
+    // gap were already setb by hero class
+    gap: 5%;
+
+    h2{
+        text-align: left;
+
+        font-size: 2.5em;
+        font-weight: 400;
+    }
+    span{
+        font-weight: 700;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    button{
+        background-color: transparent;
+        box-shadow: none;
+        color: #57007b;
+        padding: 0px;
+
+        @include underline-hover;
+        &:hover{
+            box-shadow: none;
+        }
+
+        div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: start;
+            width: 100%;
+            img{
+                width: 2em;
+                height: 2em;
+                color: #57007b;
+            }
+        }
+    }
+    .image-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 40%;
+        height: 60%;
+        border-radius: 1em;
+        overflow: hidden;
+        background-color: wheat;
+
+        background-image: url(/assets/develop-software.jpg);
+        background-size: cover;
+        background-position: center;
+        span{
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            width: 6em;
+            height: 6em;
+
+            background-color: rgba(255, 255, 255, 0.6);
+            border-radius: 50%;
+            
+
+            span{
+                display: block;
+                width: 4em;
+                height: 4em;
+                background-color: #57007b;
+                border-radius: 50%;
+                border-style: solid;
+                border-color: #ffffff;
+                border-width: 0.2em;
+
+                margin-top: 15%;
+
+                background-image: url(/assets/icons/playbutton.svg);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: 30%;
+            }
+
+        }
+    }
+}
