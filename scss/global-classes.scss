@@ -59,6 +59,16 @@ $divider-lenghth: 4em;
     background-image: linear-gradient(to right, #5f057b, #f16280);
 }
 
+h1{
+    width: 40vw;
+    font-size: 4em;
+    font-weight: 300;
+    
+    span{
+        font-weight: 700;
+    }
+}
+
 h2{
     text-align: center;
 
@@ -66,6 +76,12 @@ h2{
     
     font-size: 2.5em;
     font-weight: 600;
+}
+
+p {
+    color: #4A5568;
+    line-height: 1.8em;
+    font-size: larger;
 }
 
 

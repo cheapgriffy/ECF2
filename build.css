@@ -47,11 +47,26 @@
   background-image: linear-gradient(to right, #5f057b, #f16280);
 }
 
+h1 {
+  width: 40vw;
+  font-size: 4em;
+  font-weight: 300;
+}
+h1 span {
+  font-weight: 700;
+}
+
 h2 {
   text-align: center;
   color: #1A202C;
   font-size: 2.5em;
   font-weight: 600;
+}
+
+p {
+  color: #4A5568;
+  line-height: 1.8em;
+  font-size: larger;
 }
 
 .nav-bar {
@@ -143,11 +158,6 @@ h2 {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-}
-.hero p {
-  color: #4A5568;
-  line-height: 1.8em;
-  font-size: larger;
 }
 .hero img {
   width: 100%;
@@ -390,6 +400,27 @@ h2 {
   to {
     background-position-x: 100vw;
   }
+}
+
+.customers {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.customers h3 {
+  text-align: left;
+  font-size: 1.7em;
+  font-weight: 400;
+}
+.customers span {
+  font-weight: 700;
+}
+.customers p {
+  width: 50%;
+  text-align: center;
 }
 
 body {
