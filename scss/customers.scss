@@ -1,23 +1,135 @@
+// Weird naming but weird me, this correspond as the root div
 .customers{
     width: 100vw;
     height: 80vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-
-    h3{
-        text-align: left;
-        font-size: 1.7em;
-        font-weight: 400;
-    }
-    span{
-        font-weight: 700;
-    }
-    p{
-        width: 50%;
-        text-align: center;
+    
+    // title and introduction to the section
+    .text-part{
         
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+
+        h3{
+            text-align: left;
+            font-size: 2em;
+            font-weight: 400;
+            text-align: center;
+            margin-top: 1.5%;
+        }
+        span{
+            font-weight: 700;
+        }
+        p{
+            width: 50%;
+            text-align: center;
+            
+        }
+    }
+
+    //div that contain all the clients who reviewed our product
+    .customers-rating{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+        p{
+            margin-top: 0px;
+        }
+
+        // contain all customer classes + manage stars + manage image position
+        // $image : url to image,       //! REQUIRED
+        // $star: from 0 to 5           //* OPTIONAL
+        // $bg-position: two values,    //* OPTIONAL
+        @mixin customer-template($image, $star: 0, $bg-position: center center){
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5em;
+
+            .image-wrapper{
+                $image-wrapper-size: 8em;
+                width: $image-wrapper-size;
+                height: $image-wrapper-size;
+    
+                background-image: $image;
+                display: block;
+                border-radius: 50%;
+    
+                background-size: 120%;
+                background-position: $bg-position;
+                //background-position: 100% 30%;
+                background-repeat: no-repeat;
+                
+                opacity: 50%;
+            }
+    
+            .star-rating{
+                display: flex;
+                width: 80%;
+                justify-content: space-around;
+                align-items: center;
+                margin: 1em;
+                .star{
+                    $star-size: 1em;
+                    width: $star-size;
+                    height: $star-size;
+                }
+
+                #_1{
+                    @if $star >= 1{
+                        background-image: url(/assets/icons/filled-star.svg);
+                    } @else{
+                        background-image: url(/assets/icons/star.svg);
+                    }
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                }
+                #_2{
+                    @if $star >= 2{
+                        background-image: url(/assets/icons/filled-star.svg);
+                    } @else{
+                        background-image: url(/assets/icons/star.svg);
+                    }
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                }
+                #_3{
+                    @if $star >= 3{
+                        background-image: url(/assets/icons/filled-star.svg);
+                    } @else{
+                        background-image: url(/assets/icons/star.svg);
+                    }
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                }
+                #_4{
+                    @if $star >= 4{
+                        background-image: url(/assets/icons/filled-star.svg);
+                    } @else{
+                        background-image: url(/assets/icons/star.svg);
+                    }
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                }
+                #_5{
+                    @if $star >= 5{
+                        background-image: url(/assets/icons/filled-star.svg);
+                    } @else{
+                        background-image: url(/assets/icons/star.svg);
+                    }
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+        .Romena-De-Silva{
+            @include customer-template(url(/assets/customers/4de5ee43416a180e121b6d036b1ee22fdc94b647.png), 5, 100% 30%)
+        }
+        .Romena-De-Silva2{
+            @include customer-template(url(/assets/customers/816e55f6a9c5df90cf55132a114710192b094769.png), 5)
+        }
     }
 }

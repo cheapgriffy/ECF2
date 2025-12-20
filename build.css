@@ -405,22 +405,140 @@ p {
 .customers {
   width: 100vw;
   height: 80vh;
+}
+.customers .text-part {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1em;
 }
-.customers h3 {
+.customers .text-part h3 {
   text-align: left;
-  font-size: 1.7em;
+  font-size: 2em;
   font-weight: 400;
+  text-align: center;
+  margin-top: 1.5%;
 }
-.customers span {
+.customers .text-part span {
   font-weight: 700;
 }
-.customers p {
+.customers .text-part p {
   width: 50%;
   text-align: center;
+}
+.customers .customers-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.customers .customers-rating p {
+  margin-top: 0px;
+}
+.customers .customers-rating .Romena-De-Silva {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+.customers .customers-rating .Romena-De-Silva .image-wrapper {
+  width: 8em;
+  height: 8em;
+  background-image: url(/assets/customers/4de5ee43416a180e121b6d036b1ee22fdc94b647.png);
+  display: block;
+  border-radius: 50%;
+  background-size: 120%;
+  background-position: 100% 30%;
+  background-repeat: no-repeat;
+  opacity: 50%;
+}
+.customers .customers-rating .Romena-De-Silva .star-rating {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+}
+.customers .customers-rating .Romena-De-Silva .star-rating .star {
+  width: 1em;
+  height: 1em;
+}
+.customers .customers-rating .Romena-De-Silva .star-rating #_1 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Romena-De-Silva .star-rating #_2 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Romena-De-Silva .star-rating #_3 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Romena-De-Silva .star-rating #_4 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Romena-De-Silva .star-rating #_5 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Romena-De-Silva2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+.customers .customers-rating .Romena-De-Silva2 .image-wrapper {
+  width: 8em;
+  height: 8em;
+  background-image: url(/assets/customers/816e55f6a9c5df90cf55132a114710192b094769.png);
+  display: block;
+  border-radius: 50%;
+  background-size: 120%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 50%;
+}
+.customers .customers-rating .Romena-De-Silva2 .star-rating {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+}
+.customers .customers-rating .Romena-De-Silva2 .star-rating .star {
+  width: 1em;
+  height: 1em;
+}
+.customers .customers-rating .Romena-De-Silva2 .star-rating #_1 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Romena-De-Silva2 .star-rating #_2 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Romena-De-Silva2 .star-rating #_3 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Romena-De-Silva2 .star-rating #_4 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Romena-De-Silva2 .star-rating #_5 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 body {
