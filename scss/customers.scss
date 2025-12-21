@@ -3,6 +3,7 @@
     width: 100vw;
     height: 80vh;
     
+    
     // title and introduction to the section
     .text-part{
         
@@ -10,7 +11,9 @@
         flex-direction: column;
         align-items: center;
         gap: 1em;
-
+        margin-bottom: 5em;
+        
+        
         h3{
             text-align: left;
             font-size: 2em;
@@ -26,19 +29,50 @@
             text-align: center;
             
         }
+        
+        #starting-quote{
+            position: absolute;
+            translate: -25em 10em;
+        }
+        #ending-quote{
+            position: absolute;
+            translate: 25em 19em;
+        }
     }
-
+    
     //div that contain all the clients who reviewed our product
     .customers-rating{
         display: flex;
         align-items: center;
         justify-content: space-around;
+        scale: 85%;
+
+        // TODO Make a hover for those two, you might need to edit the svg, those two are different, thanks bryan >:c
+        #btn-left{
+            position: absolute;
+            top: 0px;
+            left: -4em;
+        }
+        #btn-right{
+            position: absolute;
+            top: 0px;
+            right: -7em;
+        }
         
         p{
             margin-top: 0px;
+            margin-bottom: 2px;
         }
 
-        // contain all customer classes + manage stars + manage image position
+        .undertext{
+            margin: 0px;
+            font-size: 1em;
+            color: gray;
+            opacity: 70%;
+        }
+
+
+        //? contain all customer classes + manage stars + manage image position
         // $image : url to image,       //! REQUIRED
         // $star: from 0 to 5           //* OPTIONAL
         // $bg-position: two values,    //* OPTIONAL
@@ -63,7 +97,7 @@
                 //background-position: 100% 30%;
                 background-repeat: no-repeat;
                 
-                opacity: 50%;
+                opacity: 60%;
             }
     
             .star-rating{
@@ -130,6 +164,33 @@
         }
         .Romena-De-Silva2{
             @include customer-template(url(/assets/customers/816e55f6a9c5df90cf55132a114710192b094769.png), 5)
+        }
+        .Imran-Khan{
+            @include customer-template(url(/assets/customers/20bddc413821884b1b750f32eb71e3d8454f450e.jpg), 5, 50% 20%)
+        }
+        .Romena-De-Silva3{
+            @include customer-template(url(/assets/customers/1e5fb31fc0336221ceab7b3d7e32f85064455486.png), 5)
+        }
+        .Romena-De-Silva4{
+            @include customer-template(url(/assets/customers/e9adccaef71c7c5ac22433b04c2da96d31a0bdcf.png), 5)
+        }
+        .bookmarked{
+            scale: 120%;
+            translate: 0px 2em;
+            // overide current opacity shift, dont know why exactly its half visible on the figma 🤔
+            .image-wrapper{
+                opacity: 100%;
+            }
+            p{
+                color: blue;
+                font-weight: 600;
+            };
+            .undertext{
+                margin: 0px;
+                font-size: 1em;
+                color: black;
+                opacity: 70%;
+            }
         }
     }
 }

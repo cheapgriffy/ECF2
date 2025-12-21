@@ -411,6 +411,7 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 1em;
+  margin-bottom: 5em;
 }
 .customers .text-part h3 {
   text-align: left;
@@ -426,13 +427,39 @@ p {
   width: 50%;
   text-align: center;
 }
+.customers .text-part #starting-quote {
+  position: absolute;
+  translate: -25em 10em;
+}
+.customers .text-part #ending-quote {
+  position: absolute;
+  translate: 25em 19em;
+}
 .customers .customers-rating {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  scale: 85%;
+}
+.customers .customers-rating #btn-left {
+  position: absolute;
+  top: 0px;
+  left: -4em;
+}
+.customers .customers-rating #btn-right {
+  position: absolute;
+  top: 0px;
+  right: -7em;
 }
 .customers .customers-rating p {
   margin-top: 0px;
+  margin-bottom: 2px;
+}
+.customers .customers-rating .undertext {
+  margin: 0px;
+  font-size: 1em;
+  color: gray;
+  opacity: 70%;
 }
 .customers .customers-rating .Romena-De-Silva {
   display: flex;
@@ -449,7 +476,7 @@ p {
   background-size: 120%;
   background-position: 100% 30%;
   background-repeat: no-repeat;
-  opacity: 50%;
+  opacity: 60%;
 }
 .customers .customers-rating .Romena-De-Silva .star-rating {
   display: flex;
@@ -502,7 +529,7 @@ p {
   background-size: 120%;
   background-position: center center;
   background-repeat: no-repeat;
-  opacity: 50%;
+  opacity: 60%;
 }
 .customers .customers-rating .Romena-De-Silva2 .star-rating {
   display: flex;
@@ -539,6 +566,182 @@ p {
   background-image: url(/assets/icons/filled-star.svg);
   background-position: center center;
   background-repeat: no-repeat;
+}
+.customers .customers-rating .Imran-Khan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+.customers .customers-rating .Imran-Khan .image-wrapper {
+  width: 8em;
+  height: 8em;
+  background-image: url(/assets/customers/20bddc413821884b1b750f32eb71e3d8454f450e.jpg);
+  display: block;
+  border-radius: 50%;
+  background-size: 120%;
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  opacity: 60%;
+}
+.customers .customers-rating .Imran-Khan .star-rating {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+}
+.customers .customers-rating .Imran-Khan .star-rating .star {
+  width: 1em;
+  height: 1em;
+}
+.customers .customers-rating .Imran-Khan .star-rating #_1 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Imran-Khan .star-rating #_2 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Imran-Khan .star-rating #_3 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Imran-Khan .star-rating #_4 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Imran-Khan .star-rating #_5 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Romena-De-Silva3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+.customers .customers-rating .Romena-De-Silva3 .image-wrapper {
+  width: 8em;
+  height: 8em;
+  background-image: url(/assets/customers/1e5fb31fc0336221ceab7b3d7e32f85064455486.png);
+  display: block;
+  border-radius: 50%;
+  background-size: 120%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 60%;
+}
+.customers .customers-rating .Romena-De-Silva3 .star-rating {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+}
+.customers .customers-rating .Romena-De-Silva3 .star-rating .star {
+  width: 1em;
+  height: 1em;
+}
+.customers .customers-rating .Romena-De-Silva3 .star-rating #_1 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Romena-De-Silva3 .star-rating #_2 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Romena-De-Silva3 .star-rating #_3 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Romena-De-Silva3 .star-rating #_4 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Romena-De-Silva3 .star-rating #_5 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Romena-De-Silva4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+.customers .customers-rating .Romena-De-Silva4 .image-wrapper {
+  width: 8em;
+  height: 8em;
+  background-image: url(/assets/customers/e9adccaef71c7c5ac22433b04c2da96d31a0bdcf.png);
+  display: block;
+  border-radius: 50%;
+  background-size: 120%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 60%;
+}
+.customers .customers-rating .Romena-De-Silva4 .star-rating {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+}
+.customers .customers-rating .Romena-De-Silva4 .star-rating .star {
+  width: 1em;
+  height: 1em;
+}
+.customers .customers-rating .Romena-De-Silva4 .star-rating #_1 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Romena-De-Silva4 .star-rating #_2 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Romena-De-Silva4 .star-rating #_3 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Romena-De-Silva4 .star-rating #_4 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .Romena-De-Silva4 .star-rating #_5 {
+  background-image: url(/assets/icons/filled-star.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.customers .customers-rating .bookmarked {
+  scale: 120%;
+  translate: 0px 2em;
+}
+.customers .customers-rating .bookmarked .image-wrapper {
+  opacity: 100%;
+}
+.customers .customers-rating .bookmarked p {
+  color: blue;
+  font-weight: 600;
+}
+.customers .customers-rating .bookmarked .undertext {
+  margin: 0px;
+  font-size: 1em;
+  color: black;
+  opacity: 70%;
 }
 
 body {
