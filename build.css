@@ -414,7 +414,7 @@ p {
   margin-bottom: 5em;
 }
 .customers .text-part h3 {
-  text-align: left;
+  text-align: center;
   font-size: 2em;
   font-weight: 400;
   text-align: center;
@@ -769,7 +769,7 @@ p {
   margin: 3em;
 }
 .case-studie .title h3 {
-  text-align: left;
+  text-align: center;
   font-size: 2em;
   font-weight: 400;
   text-align: center;
@@ -965,7 +965,7 @@ p {
   margin-top: 5px;
   transition: all 0.3s ease;
 }
-.case-studie button {
+.case-studie .bottom-button {
   background-color: transparent;
   color: #4a5568;
   border: transparent;
@@ -976,7 +976,7 @@ p {
   bottom: 0;
   right: 10%;
 }
-.case-studie button span {
+.case-studie .bottom-button span {
   height: 2px;
   width: 0%;
   background-color: transparent;
@@ -984,16 +984,143 @@ p {
   margin-top: 5px;
   transition: all 0.3s ease;
 }
-.case-studie button:hover {
+.case-studie .bottom-button:hover {
   color: blue;
 }
-.case-studie button:hover span {
+.case-studie .bottom-button:hover span {
   height: 2px;
   width: 100%;
   background-color: blue;
   display: block;
   margin-top: 5px;
   transition: all 0.3s ease;
+}
+
+.way-of-building {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.way-of-building .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.way-of-building .title h3 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 1.5%;
+  line-height: 1.4em;
+}
+.way-of-building .title span {
+  font-weight: 700;
+}
+.way-of-building .title p {
+  width: 50%;
+  text-align: center;
+}
+.way-of-building .title {
+  gap: 2em;
+  margin: 2em;
+}
+.way-of-building .explaination-area {
+  margin-bottom: 8em;
+  display: flex;
+  width: 80%;
+}
+.way-of-building .explaination-area .text h3 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 1.5%;
+  line-height: 1.4em;
+}
+.way-of-building .explaination-area .text span {
+  font-weight: 700;
+}
+.way-of-building .explaination-area .text p {
+  width: 50%;
+  text-align: center;
+}
+.way-of-building .explaination-area .text .overide-basic-title-alignement {
+  text-align: left;
+}
+.way-of-building .explaination-area .text .semi-bold {
+  font-weight: 600;
+}
+.way-of-building .explaination-area .text p {
+  width: 80%;
+}
+.way-of-building .explaination-area .text {
+  width: 52%;
+}
+.way-of-building .explaination-area .text .callout {
+  border: 0px;
+  border-left: 2px;
+  border-color: #d24e7f;
+  border-style: solid;
+  font-style: italic;
+  opacity: 60%;
+  padding: 0.5em;
+  text-align: left;
+}
+.way-of-building .explaination-area .text .credits {
+  display: flex;
+}
+.way-of-building .explaination-area .text .credits div {
+  width: 20em;
+}
+.way-of-building .explaination-area .text .credits div p {
+  padding-left: 1em;
+  font-size: 0.8em;
+  text-align: left;
+  margin: 0em;
+}
+.way-of-building .explaination-area .img-wrapper {
+  width: 48%;
+  height: 30em;
+  border-radius: 0.5em;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.way-of-building .explaination-area .img-wrapper img {
+  width: auto;
+  height: auto;
+}
+.way-of-building .revert {
+  flex-direction: row-reverse;
+  gap: 6em;
+}
+.way-of-building #credit1 {
+  background-position: center center;
+  background-size: contain;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-image: url(assets/customers/good-person-ig.png);
+}
+.way-of-building #credit2 {
+  background-position: center center;
+  background-size: contain;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-image: url(assets/customers/lady.png);
+}
+.way-of-building #credit3 {
+  background-position: center center;
+  background-size: contain;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-image: url(assets/customers/45af069389dff60943c6422ed208b79d6796c341.png);
 }
 
 body {

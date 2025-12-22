@@ -1,0 +1,104 @@
+@use "global-classes.scss" as *; 
+
+.way-of-building{
+    $margin-y: 1em;
+    margin-top: $margin-y;
+    margin-bottom: $margin-y;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include basic-title;
+        
+        gap: 2em;
+        margin: 2em;
+    }
+
+    .explaination-area{
+        $image-size: 48%;
+        
+        margin-bottom: 8em;
+        display: flex;
+        width: 80%;
+
+        .text{
+            @include basic-title;
+
+            .overide-basic-title-alignement{
+                text-align: left;
+            }
+            .semi-bold{
+                font-weight: 600;
+            }
+            p{
+                width: 80%;
+            }
+            width: calc(100% - $image-size);
+            .callout{
+                border: 0px;
+                border-left: 2px;
+                border-color: #d24e7f;
+                border-style: solid;
+                font-style: italic;
+
+                opacity: 60%;
+                padding: 0.5em;
+                text-align: left;
+            }
+            .credits{
+                display: flex;
+
+                div{
+                    width: 20em;
+                    p{
+                        padding-left: 1em;
+                        font-size: 0.8em;
+                        text-align: left;
+                        margin: 0em;
+                    }
+                }
+            }
+        }
+        .img-wrapper{
+            width: $image-size;
+            height: 30em;
+            border-radius: 0.5em;
+            overflow: hidden;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+    .revert{
+        flex-direction: row-reverse;
+        gap: 6em;
+    }
+    @mixin credit-img{
+        background-position: center center;
+        background-size: contain;
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+    }
+    #credit1{
+        @include credit-img();
+        background-image: url(assets/customers/good-person-ig.png);
+    }
+    #credit2{
+        @include credit-img();
+        background-image: url(assets/customers/lady.png);
+    }
+    #credit3{
+        @include credit-img();
+        background-image: url(assets/customers/45af069389dff60943c6422ed208b79d6796c341.png);
+    }
+}
