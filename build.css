@@ -1120,7 +1120,11 @@ p {
   width: 3em;
   height: 3em;
   border-radius: 50%;
-  background-image: url(assets/customers/45af069389dff60943c6422ed208b79d6796c341.png);
+  background-image: url(assets/customers/ihate-thatone.png);
+}
+
+body {
+  color: black;
 }
 
 body {
