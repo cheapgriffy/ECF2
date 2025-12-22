@@ -1,3 +1,89 @@
-body{
-    color: black;
+@use "global-classes.scss" as *; 
+
+.developement-aproach{
+    @include grey-background;
+    height: 100vh;    
+
+    .title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2em;
+
+        @include basic-title
+    }
+
+    .card-part{
+        height: 60vh;
+        $margin-x: 8%;
+        margin-left: $margin-x;
+        margin-right: $margin-x;
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2em;
+        
+        .card{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 2em;
+
+            background-color: #fafafa;
+            border-color: #e7daed;
+            border-width: 2px;
+            border-style: solid;
+            
+            padding: 2em;
+
+            min-height: 10em;
+            min-width: 35vw;
+            height: 10em;
+            width: 35vw;
+
+            .icon-wrapper{
+                display: flex;
+                justify-content: center;
+                padding-top: 1em;
+
+                width: 5em;
+                height: 100%;
+
+                span{
+                    //! need to remplace that with a mixinable background and shit
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    border-radius: 1em;
+                    width: 5em;
+                    height: 5em;
+                    img{
+                        width: 55%;
+                        height: 55%;
+                    }
+                }
+                #_1{
+                    background-color: #27272e;
+                }
+                #_2{
+                    background-image: linear-gradient(to left, #52a0f6, #67d8f2,);
+                }
+                #_3{
+                    background-image: linear-gradient(to left, #ff3e9a, #ff92ae,);                
+                }
+                #_4{
+                    background-image: linear-gradient(to left, #63e9ec, #28e79a,);                
+                }
+                #_5{
+                    background-image: linear-gradient(to left, #f8996e, #fee85e)
+                }
+                #_6{
+                    background-image: linear-gradient(to left, #ee6080, #60067c)
+                }
+            }
+
+        }
+    }
 }
