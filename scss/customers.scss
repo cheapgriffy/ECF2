@@ -1,3 +1,5 @@
+@use "global-classes.scss" as *; 
+
 // Weird naming but weird me, this correspond as the root div
 .customers{
     width: 100vw;
@@ -13,30 +15,16 @@
         gap: 1em;
         margin-bottom: 5em;
         
-        
-        h3{
-            text-align: left;
-            font-size: 2em;
-            font-weight: 400;
-            text-align: center;
-            margin-top: 1.5%;
-        }
-        span{
-            font-weight: 700;
-        }
-        p{
-            width: 50%;
-            text-align: center;
-            
-        }
+        //easier for later section uses, check //? global classes
+        @include basic-title;
         
         #starting-quote{
             position: absolute;
-            translate: -25em 10em;
+            translate: -28em 10em;
         }
         #ending-quote{
             position: absolute;
-            translate: 25em 19em;
+            translate: 28em 19em;
         }
     }
     

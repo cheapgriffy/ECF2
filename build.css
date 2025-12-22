@@ -364,7 +364,7 @@ p {
   height: 70vh;
 }
 .sponsors .titles {
-  margin-left: 5em;
+  margin: 5em;
 }
 .sponsors h3 {
   width: 40vw;
@@ -429,11 +429,11 @@ p {
 }
 .customers .text-part #starting-quote {
   position: absolute;
-  translate: -25em 10em;
+  translate: -28em 10em;
 }
 .customers .text-part #ending-quote {
   position: absolute;
-  translate: 25em 19em;
+  translate: 28em 19em;
 }
 .customers .customers-rating {
   display: flex;

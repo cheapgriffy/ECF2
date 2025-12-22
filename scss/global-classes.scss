@@ -84,6 +84,33 @@ p {
     font-size: larger;
 }
 
+@mixin basic-title{
+    h3{
+        text-align: left;
+        font-size: 2em;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 1.5%;
+    }
+    span{
+        font-weight: 700;
+    }
+    p{
+        width: 50%;
+        text-align: center;
+        
+    }
+}
+
+@mixin grey-background{
+        background-color: #F7F7FA;
+        
+        border-style: solid;
+        border-width: 1px;
+        border-color: #E7DAED;
+        border-left: 0px;
+        border-right: 0px;
+}
 
 @mixin underline-hover{
     span{
