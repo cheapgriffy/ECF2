@@ -419,6 +419,7 @@ p {
   font-weight: 400;
   text-align: center;
   margin-top: 1.5%;
+  line-height: 1.4em;
 }
 .customers .text-part span {
   font-weight: 700;
@@ -742,6 +743,257 @@ p {
   font-size: 1em;
   color: black;
   opacity: 70%;
+}
+
+.case-studie {
+  width: 100vw;
+  height: auto;
+  padding-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  background-color: #F7F7FA;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #E7DAED;
+  border-left: 0px;
+  border-right: 0px;
+}
+.case-studie .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin: 3em;
+}
+.case-studie .title h3 {
+  text-align: left;
+  font-size: 2em;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 1.5%;
+  line-height: 1.4em;
+}
+.case-studie .title span {
+  font-weight: 700;
+}
+.case-studie .title p {
+  width: 50%;
+  text-align: center;
+}
+.case-studie .card {
+  display: flex;
+  height: 28em;
+  gap: 1em;
+}
+.case-studie #_1 {
+  background-color: #f1f2ff;
+  border-color: #d1e1f0;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1em;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  height: 28em;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+.case-studie #_1 .image-wrapper {
+  background-image: url(/assets/cf00e01c33e587f7051a755a12924ff02714b828.jpg);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 0.9em;
+  width: 45%;
+  height: 100%;
+}
+.case-studie #_1 .text-area {
+  width: 50%;
+  margin: 2em;
+}
+.case-studie #_1 .text-area h3 {
+  font-size: 2em;
+  color: #2d3748;
+}
+.case-studie #_1 .text-area p {
+  color: #4a5568;
+  width: 100%;
+}
+.case-studie #_1 .text-area button {
+  background-color: transparent;
+  color: #4a5568;
+  border: transparent;
+  font-family: Inter, sans-serif;
+  position: absolute;
+  right: 15em;
+}
+.case-studie #_1 .text-area button span {
+  height: 2px;
+  width: 0%;
+  background-color: transparent;
+  display: block;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+.case-studie #_1 .text-area button:hover {
+  color: blue;
+}
+.case-studie #_1 .text-area button:hover span {
+  height: 2px;
+  width: 100%;
+  background-color: blue;
+  display: block;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+.case-studie #_2 {
+  background-color: #f0fff7;
+  border-color: #d1e1f0;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1em;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  height: 28em;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+.case-studie #_2 .image-wrapper {
+  background-image: url(/assets/af19f7dccd07e129bd606a5f1b38eb0f49e88e10.jpg);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 0.9em;
+  width: 45%;
+  height: 100%;
+}
+.case-studie #_2 .text-area {
+  width: 50%;
+  margin: 2em;
+}
+.case-studie #_2 .text-area h3 {
+  font-size: 2em;
+  color: #2d3748;
+}
+.case-studie #_2 .text-area p {
+  color: #4a5568;
+  width: 100%;
+}
+.case-studie #_2 .text-area button {
+  background-color: transparent;
+  color: #4a5568;
+  border: transparent;
+  font-family: Inter, sans-serif;
+  position: absolute;
+  right: 15em;
+}
+.case-studie #_2 .text-area button span {
+  height: 2px;
+  width: 0%;
+  background-color: transparent;
+  display: block;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+.case-studie #_2 .text-area button:hover {
+  color: blue;
+}
+.case-studie #_2 .text-area button:hover span {
+  height: 2px;
+  width: 100%;
+  background-color: blue;
+  display: block;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+.case-studie #_3 {
+  background-color: #fff4f4;
+  border-color: #d1e1f0;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1em;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  height: 28em;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+.case-studie #_3 .image-wrapper {
+  background-image: url(/assets/d3e26e2ddf8ab2a7507f9f19331d52e50cf953e1.jpg);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 0.9em;
+  width: 45%;
+  height: 100%;
+}
+.case-studie #_3 .text-area {
+  width: 50%;
+  margin: 2em;
+}
+.case-studie #_3 .text-area h3 {
+  font-size: 2em;
+  color: #2d3748;
+}
+.case-studie #_3 .text-area p {
+  color: #4a5568;
+  width: 100%;
+}
+.case-studie #_3 .text-area button {
+  background-color: transparent;
+  color: #4a5568;
+  border: transparent;
+  font-family: Inter, sans-serif;
+  position: absolute;
+  right: 15em;
+}
+.case-studie #_3 .text-area button span {
+  height: 2px;
+  width: 0%;
+  background-color: transparent;
+  display: block;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+.case-studie #_3 .text-area button:hover {
+  color: blue;
+}
+.case-studie #_3 .text-area button:hover span {
+  height: 2px;
+  width: 100%;
+  background-color: blue;
+  display: block;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+.case-studie button {
+  background-color: transparent;
+  color: #4a5568;
+  border: transparent;
+  font-family: Inter, sans-serif;
+  font-size: 1em;
+  position: relative;
+  align-self: flex-end;
+  bottom: 0;
+  right: 10%;
+}
+.case-studie button span {
+  height: 2px;
+  width: 0%;
+  background-color: transparent;
+  display: block;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+.case-studie button:hover {
+  color: blue;
+}
+.case-studie button:hover span {
+  height: 2px;
+  width: 100%;
+  background-color: blue;
+  display: block;
+  margin-top: 5px;
+  transition: all 0.3s ease;
 }
 
 body {

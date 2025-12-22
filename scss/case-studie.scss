@@ -1,0 +1,113 @@
+@use "global-classes.scss" as *; 
+
+.case-studie{
+    width: 100vw;
+    height: auto;
+
+    padding-bottom: 3em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    @include grey-background;
+
+    //? create case card style
+    // $image, url to image //! REQUIRED
+    // $bg-color: explicit //* OPTIONAL
+    // $card-x-margin, the distance between the borders duuuuh, controlable for responsive //* OPTIONAL
+    // $heigh, y lenght //* OPTINAL
+    @mixin horizontal-card($image, $bg-color: #f1f2ff, $card-x-margin: 10em, $height: 28em){
+        background-color: $bg-color;
+        
+        border-color: #d1e1f0;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 1em;
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 2em;
+
+        height: $height;
+
+        margin-left: $card-x-margin;
+        margin-right: $card-x-margin;
+
+        .image-wrapper{
+            background-image: $image;
+            background-position: center center;
+            background-size: cover;
+            
+            // slight misalignement with parent radius if 1em
+            border-radius: 0.9em;
+            width: 45%;
+            height: 100%;
+
+        }
+        .text-area{
+            width: 50%;
+            margin: 2em;
+            h3{
+                font-size: 2em;
+                color: #2d3748;
+            }
+            p{
+                color: #4a5568;
+                width: 100%;
+            }
+            button{
+                background-color: transparent;
+                color: #4a5568;
+                border: transparent;
+                font-family: Inter, sans-serif;
+                position: absolute;
+                right: calc(5em + $card-x-margin);
+                @include underline-hover;
+            }
+            
+            
+        }
+    }
+
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+
+        margin: 3em;
+
+        @include basic-title
+    }
+    .card{
+        display: flex;
+        height: 28em;
+        gap: 1em;
+
+    }
+    #_1{
+        @include horizontal-card(url(/assets/cf00e01c33e587f7051a755a12924ff02714b828.jpg));
+    }
+    #_2{
+        @include horizontal-card(url(/assets/af19f7dccd07e129bd606a5f1b38eb0f49e88e10.jpg), #f0fff7);
+    }
+    #_3{
+        @include horizontal-card(url(/assets/d3e26e2ddf8ab2a7507f9f19331d52e50cf953e1.jpg), #fff4f4);
+    }
+
+    button{
+        background-color: transparent;
+        color: #4a5568;
+        border: transparent;
+        
+        font-family: Inter, sans-serif;
+        font-size: 1em;
+
+        position: relative;
+        align-self: flex-end;
+        bottom: 0;
+        right: 10%;
+
+        @include underline-hover;
+    }
+}
