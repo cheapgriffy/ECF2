@@ -1,0 +1,138 @@
+@use "global-classes.scss" as *; 
+
+//* Card system, cause it might be a little too unintuitive
+//? Corespond to the root of the place that the card will take, used to have a decent look on any resolution and
+//? keep the line in between the main timeline
+//         WRAPPER
+//  |-------|
+//  |       |    CARD
+//  |-------|
+//      |        ARROW
+//      |
+
+@mixin row-render($direction: column){
+    .card-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: $direction;
+        height: 100%;
+        width: 28%;
+        .card{
+            padding: 0.2em;
+
+            $padding-x: 1em;
+            padding-left: $padding-x;
+            padding-right: $padding-x;
+
+            border-style: solid;
+            border-width: 0.2em;
+            border-color: #E7DAED;
+            border-radius: 1em;
+
+            width: auto;
+            height: auto;
+            min-height: 13em;
+            
+            h4{
+                color: #1A202C;
+                font-weight: 700;
+                font-size: 1.2rem;
+                span{
+                    background-image: linear-gradient(#da5380, #6d0e7c);
+                    
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    margin-right: 0.8em;
+                }
+            }
+            p{
+                color: #718096;
+                font-size: 1.8vh;
+            }
+        }
+        .arrow{
+            @if $direction == column{
+                margin-top: 2em;
+            }
+            @if $direction == column-reverse{
+                margin-bottom: 2em;
+            }
+            height: 3em;
+            width: 0.2rem;
+            background-image: linear-gradient(#f76680, #b23a7e);
+        }
+    }
+}
+
+ 
+.alcaline-works{
+    
+    $margin-x: 5%;
+    margin-left: $margin-x;
+    margin-right: $margin-x;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: full;
+    height: auto;
+    .title{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+
+        margin-bottom: 5em;
+
+        @include basic-title;
+    }
+    .diagram{
+        
+        
+        height: 50em;
+        
+        display: flex;
+        flex-direction: column;
+        
+        .top-row{
+            height: 18em;
+            display: flex;
+            gap: 5%;
+            @include row-render(column);
+
+            translate:-2em 0px;
+        }    
+        .bottom-row{
+            height: 18em;
+            display: flex;
+            gap: 5%;
+            @include row-render(column-reverse);
+
+            translate:2em 0px;
+        }
+        .timeline{
+            height: 0.2em;
+            width: full;
+
+            display: flex;
+            gap: 3em;
+
+            
+            span{
+                width: 100%;
+                height: 100%;
+                display: block;
+                background-image: linear-gradient(#f76680, #b23a7e);
+            }
+            img{
+                scale: 2000%;
+            }
+        }    
+    }    
+}    
+
+   

@@ -1271,8 +1271,9 @@ header .circle-ofset {
 
 .tech-stack {
   margin-top: 4em;
+  margin-bottom: 4em;
   width: 100vw;
-  height: 100vh;
+  height: auto;
 }
 .tech-stack .titles {
   display: flex;
@@ -1366,6 +1367,160 @@ header .circle-ofset {
   height: 2px;
   margin-top: 8em;
   background-color: rgba(128, 128, 128, 0.2);
+}
+
+.alcaline-works {
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: full;
+  height: auto;
+}
+.alcaline-works .title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 5em;
+}
+.alcaline-works .title h3 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 1.5%;
+  line-height: 1.4em;
+}
+.alcaline-works .title span {
+  font-weight: 700;
+}
+.alcaline-works .title p {
+  width: 50%;
+  text-align: center;
+}
+.alcaline-works .diagram {
+  height: 50em;
+  display: flex;
+  flex-direction: column;
+}
+.alcaline-works .diagram .top-row {
+  height: 18em;
+  display: flex;
+  gap: 5%;
+}
+.alcaline-works .diagram .top-row .card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 28%;
+}
+.alcaline-works .diagram .top-row .card-wrapper .card {
+  padding: 0.2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-style: solid;
+  border-width: 0.2em;
+  border-color: #E7DAED;
+  border-radius: 1em;
+  width: auto;
+  height: auto;
+  min-height: 13em;
+}
+.alcaline-works .diagram .top-row .card-wrapper .card h4 {
+  color: #1A202C;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.alcaline-works .diagram .top-row .card-wrapper .card h4 span {
+  background-image: linear-gradient(#da5380, #6d0e7c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 0.8em;
+}
+.alcaline-works .diagram .top-row .card-wrapper .card p {
+  color: #718096;
+  font-size: 1.8vh;
+}
+.alcaline-works .diagram .top-row .card-wrapper .arrow {
+  margin-top: 2em;
+  height: 3em;
+  width: 0.2rem;
+  background-image: linear-gradient(#f76680, #b23a7e);
+}
+.alcaline-works .diagram .top-row {
+  translate: -2em 0px;
+}
+.alcaline-works .diagram .bottom-row {
+  height: 18em;
+  display: flex;
+  gap: 5%;
+}
+.alcaline-works .diagram .bottom-row .card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column-reverse;
+  height: 100%;
+  width: 28%;
+}
+.alcaline-works .diagram .bottom-row .card-wrapper .card {
+  padding: 0.2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-style: solid;
+  border-width: 0.2em;
+  border-color: #E7DAED;
+  border-radius: 1em;
+  width: auto;
+  height: auto;
+  min-height: 13em;
+}
+.alcaline-works .diagram .bottom-row .card-wrapper .card h4 {
+  color: #1A202C;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.alcaline-works .diagram .bottom-row .card-wrapper .card h4 span {
+  background-image: linear-gradient(#da5380, #6d0e7c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 0.8em;
+}
+.alcaline-works .diagram .bottom-row .card-wrapper .card p {
+  color: #718096;
+  font-size: 1.8vh;
+}
+.alcaline-works .diagram .bottom-row .card-wrapper .arrow {
+  margin-bottom: 2em;
+  height: 3em;
+  width: 0.2rem;
+  background-image: linear-gradient(#f76680, #b23a7e);
+}
+.alcaline-works .diagram .bottom-row {
+  translate: 2em 0px;
+}
+.alcaline-works .diagram .timeline {
+  height: 0.2em;
+  width: full;
+  display: flex;
+  gap: 3em;
+}
+.alcaline-works .diagram .timeline span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: linear-gradient(#f76680, #b23a7e);
+}
+.alcaline-works .diagram .timeline img {
+  scale: 2000%;
 }
 
 body {
