@@ -1525,7 +1525,7 @@ header .circle-ofset {
 
 .featured-resources {
   width: 100vw;
-  height: 100vh;
+  height: auto;
 }
 .featured-resources .title {
   display: flex;
@@ -1618,6 +1618,59 @@ header .circle-ofset {
   display: block;
   margin-top: 5px;
   transition: all 0.3s ease;
+}
+
+.hire-cto {
+  margin-top: 2em;
+}
+.hire-cto .large-card {
+  background-image: linear-gradient(#F1F1F5, #E4ECF7);
+  padding: 7em;
+  margin: 5em;
+  border-radius: 2em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hire-cto .large-card h3 {
+  width: 60%;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.hire-cto .large-card h3 h3 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 1.5%;
+  line-height: 1.4em;
+}
+.hire-cto .large-card h3 span {
+  font-weight: 700;
+}
+.hire-cto .large-card h3 p {
+  width: 50%;
+  text-align: center;
+}
+.hire-cto .large-card .button-wrapper {
+  width: 30em;
+  height: 20em;
+  background-image: url("/assets/icons/button-sparkles.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hire-cto .cta-overide {
+  align-self: center;
+  background-image: linear-gradient(#f26463, #ffc157);
+  scale: 140%;
+  translate: 0em -0.5em;
+}
+.hire-cto .cta-overide:hover {
+  color: white;
 }
 
 body {

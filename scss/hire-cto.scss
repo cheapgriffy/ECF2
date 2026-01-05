@@ -1,0 +1,48 @@
+@use "global-classes.scss" as *; 
+
+.hire-cto{
+    
+    margin-top: 2em;
+    .large-card{
+        
+        background-image: linear-gradient(#F1F1F5 ,#E4ECF7);
+        padding: 7em;
+        margin: 5em;
+        border-radius: 2em;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        h3{
+            width: 60%;
+            font-weight: 700;
+            font-size: 3rem;
+            @include basic-title;
+        }
+        .button-wrapper{
+            width: 30em;
+            height: 20em;
+            background-image: url("/assets/icons/button-sparkles.png");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+ 
+    .cta-overide
+    {
+        align-self: center;
+        background-image: linear-gradient(#f26463, #ffc157);
+        scale: 140%;
+        translate: 0em -0.5em;
+        &:hover{
+            color: white;
+        }
+    }
+}
