@@ -1,7 +1,25 @@
 @use "global-classes.scss" as *; 
 
+
+
 // entier root div here
 .develop-software{
+    
+    overflow: hidden;
+    position: relative;
+    // overides from hero, for the circle scrolling effect
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    .circle-ofset{
+        position: absolute;
+        width: 8em;
+        height: 8em;
+        top: -18vh;
+        left: 10%;
+
+    }
+
     // gap were already setb by hero class
     gap: 5%;
 

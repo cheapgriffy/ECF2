@@ -1,3 +1,8 @@
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 .highlight {
   color: transparent;
   background-image: linear-gradient(to left, #b980c0, #c068b1);
@@ -29,6 +34,7 @@
   margin-top: 20px;
   font-size: 1em;
   font-weight: 600;
+  font-family: Inter, sans-serif;
   align-self: start;
   transition: all 0.3s ease;
 }
@@ -69,6 +75,29 @@ p {
   font-size: larger;
 }
 
+.circle {
+  position: absolute;
+  width: 8em;
+  height: 8em;
+}
+
+@keyframes scrolling-paralax {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(30vw);
+  }
+}
+.onscroll {
+  animation: scrolling-paralax linear;
+  animation-timeline: scroll(root);
+}
+
+.circle-ofset-develop-software {
+  translate: 0px -5vh;
+}
+
 .nav-bar {
   z-index: 10;
   display: flex;
@@ -96,6 +125,7 @@ p {
   padding: 12px 22px;
   font-size: 1em;
   font-weight: 600;
+  font-family: Inter, sans-serif;
 }
 .nav-bar button:hover {
   cursor: pointer;
@@ -132,6 +162,15 @@ p {
   display: block;
   margin-top: 5px;
   transition: all 0.3s ease;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+}
+header .circle-ofset {
+  left: 40%;
+  translate: 0px -5em;
 }
 
 .hero {
@@ -263,6 +302,19 @@ p {
   background-color: #57007b;
 }
 
+.develop-software {
+  overflow: hidden;
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.develop-software .circle-ofset {
+  position: absolute;
+  width: 8em;
+  height: 8em;
+  top: -18vh;
+  left: 10%;
+}
 .develop-software {
   gap: 5%;
 }

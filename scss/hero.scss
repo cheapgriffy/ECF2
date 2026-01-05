@@ -1,7 +1,18 @@
+header{
+    //? somehow that overflow only works if relative is here, dont worry it does not break spacing
+    position: relative;
+    overflow: hidden;
+    .circle-ofset{
+        left: 40%;
+        translate: 0px -5em;
+    }
+}
 .hero{
     margin-top: 2em;
     margin-bottom: 3em;
     height: 90vh;
+
+    
 
     display: flex;
     gap: 2%;

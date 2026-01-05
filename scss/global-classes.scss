@@ -1,6 +1,12 @@
 // This place is for recurent classes, y'know, highlight texts and stuff
 $divider-lenghth: 4em;
 
+body{
+    //! Prevent weird space on the right side
+    overflow-x: hidden;
+    width: 100vw;
+}
+
 .highlight{
     // mandatory for background-clip to work
     // dang do i hate chromonium requirements
@@ -38,6 +44,7 @@ $divider-lenghth: 4em;
 
     font-size: 1em;
     font-weight: 600;
+    font-family: Inter, sans-serif;
 
     // makes it not stretch like hell on flex containers
     align-self: start;
@@ -136,4 +143,32 @@ p {
             
         }
     }
+}
+
+// specific circle positions are on their respective files, not global
+// circle-ofset, would be funny to have
+.circle{
+    position: absolute;
+    width: 8em;
+    height: 8em;
+}
+
+// this part is not supported by Firefox... and i'm too lazy to code it in javascript 
+@keyframes scrolling-paralax {
+    from {
+      transform: translateY(0) ;
+    }
+    to {
+      transform: translateY(30vw);
+    }
+  }
+.onscroll {
+    animation: scrolling-paralax linear;
+
+    animation-timeline: scroll(root);
+}
+
+//! TEMP TODO
+.circle-ofset-develop-software{
+    translate: 0px -5vh;
 }
