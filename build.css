@@ -1673,6 +1673,74 @@ header .circle-ofset {
   color: white;
 }
 
+footer {
+  width: 100vw;
+  height: 100vh;
+}
+footer .main-part {
+  display: flex;
+  justify-content: space-around;
+}
+footer .main-part h4 {
+  color: black;
+  font-weight: 700;
+  font-size: large;
+}
+footer .main-part p {
+  color: grey;
+  width: 20em;
+}
+footer .main-part a {
+  color: grey;
+}
+footer .main-part a span {
+  height: 2px;
+  width: 0%;
+  background-color: transparent;
+  display: block;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+footer .main-part a:hover {
+  color: blue;
+}
+footer .main-part a:hover span {
+  height: 2px;
+  width: 100%;
+  background-color: blue;
+  display: block;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+footer .main-part .notice img {
+  width: 15em;
+  height: auto;
+  margin-top: 1em;
+  margin-top: 1em;
+}
+footer .main-part .links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+footer .main-part .socials {
+  align-self: flex-end;
+  display: flex;
+  gap: 1em;
+}
+footer .main-part .socials button {
+  width: 5em;
+  height: 5em;
+  background-color: #fafafa;
+  border-radius: 50%;
+  border-style: hidden;
+  box-shadow: 0px 0px 3em rgba(0, 0, 0, 0.223);
+}
+footer .main-part .socials button .facebook {
+  background-image: url("/assets/logo/facebook 1.png");
+  background-position: center;
+}
+
 body {
   margin: 0;
   font-family: Inter, sans-serif;
