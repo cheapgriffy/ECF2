@@ -2,7 +2,10 @@
 
 .developement-aproach{
     @include grey-background;
-    height: 100vh;    
+    height: auto;
+    $padding: 2em;
+    padding-top: $padding;
+    padding-bottom: $padding;
 
     .title{
         display: flex;
@@ -14,7 +17,7 @@
     }
 
     .card-part{
-        height: 60vh;
+        height: auto;
         $margin-x: 8%;
         margin-left: $margin-x;
         margin-right: $margin-x;

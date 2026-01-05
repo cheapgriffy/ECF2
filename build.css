@@ -1182,7 +1182,9 @@ header .circle-ofset {
   border-color: #E7DAED;
   border-left: 0px;
   border-right: 0px;
-  height: 100vh;
+  height: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 .developement-aproach .title {
   display: flex;
@@ -1206,7 +1208,7 @@ header .circle-ofset {
   text-align: center;
 }
 .developement-aproach .card-part {
-  height: 60vh;
+  height: auto;
   margin-left: 8%;
   margin-right: 8%;
   display: flex;
