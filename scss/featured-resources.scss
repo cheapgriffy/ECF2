@@ -1,0 +1,85 @@
+@use "global-classes.scss" as *; 
+
+.featured-resources{
+    width: 100vw;
+    height: 100vh;
+
+    .title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include basic-title
+    }
+
+    .article-carousel{
+        overflow-x: scroll;
+        // Hide those weird side scrollbars thingies
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+
+        width: 100%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5em;
+
+        height: auto;
+
+        .card{
+            width: 23em;
+            height: 28em;
+
+            .image-wrapper{
+                color: black;
+                overflow: hidden;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                height: 55%;
+                border-radius: 1em;
+                
+                img{
+                    transition: all 0.2s ease-out;          
+                    scale: 105%;
+                }
+                &:hover{
+                    img{
+                        transition: all 0.2s ease-out;          
+                        scale: 100%;
+                    }
+                }
+            }
+            .card-content{
+                height: auto;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                button {
+                    font-size: 1em;
+                    font-weight: 400;
+                    font-family: Inter, sans-serif;
+                    transition: color 0.3s ease;
+                    color: blue;
+
+                    align-self: flex-end;
+                    padding: 10px 15px;
+                    display: flex;
+                    flex-direction: column;
+
+                    background-color: transparent;
+                    border-style: hidden;
+
+                    @include underline-hover;
+
+                }
+            }
+        }
+    }
+}
