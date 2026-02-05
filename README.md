@@ -1,2 +1,5 @@
 # ECF 2
-## A static page made with Sass based of a figma baseline
+
+Un **exercice** de conception de site **web statique** en **SCSS**
+
+## [JK Developpers, Github page](https://cheapgriffy.github.io/ECF2/)
